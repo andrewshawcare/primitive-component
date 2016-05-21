@@ -1,6 +1,12 @@
-PrimitiveComponent = function (primitive) {
-  var primitiveElement = document.createElement("span");
-  primitiveElement.classList.add("primitive");
-  primitiveElement.innerText = primitive;
-  return primitiveElement;
-};
+define([], function () {
+  return function (data) {
+    var data = data || {};
+    var value = data.value || "";
+
+    var primitiveElement = document.createElement("span");
+    primitiveElement.classList.add("primitive");
+    primitiveElement.textContent = data.value;
+
+    return primitiveElement;
+  };
+});
