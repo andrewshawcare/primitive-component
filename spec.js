@@ -1,8 +1,8 @@
-define(["primitive-component/index.js"], function (PrimitiveComponent) {
+define(["./index.js"], function (PrimitiveComponent) {
   describe("A primitive component", function () {
     it("creates a span from a primitive value", function () {
-      var primitive = "Hello, world!";
-      var primitiveComponent = PrimitiveComponent(primitive);
+      var value = "Hello, world!";
+      var primitiveComponent = PrimitiveComponent({value: value});
       expect(primitiveComponent.classList).toContain("primitive");
     });
   });
