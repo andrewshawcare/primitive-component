@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "JASMINE_CONFIG_PATH=jasmine.json ./node_modules/.bin/jasmine"
+    "test": "node test.js"
   },
   "description": "Renders a JavaScript primitive as an HTML span.",
   "keywords": ["primitive", "component", "html", "view"],
@@ -15,11 +15,12 @@
   "license": "MIT",
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com> (https://github.com/andrewshawcare)",
   "repository": "andrewshawcare/primitive-component",
-  "dependencies": {},
+  "dependencies": {
+    "requirejs": "^2.2.0"
+  },
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jsdom": "^8.2.0",
-    "amdefine": "^1.0.0"
+    "jsdom": "^8.2.0"
   },
   "component": {
     "data": {
